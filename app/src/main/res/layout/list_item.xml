@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Liste Adı:"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15dp"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:id="@+id/lst_txtIcerik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:fontFamily="sans-serif-condensed"
+            android:text="TextView"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lst_imgprofil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/lst_imgprofil"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            />
+
+        <TextView
+            android:id="@+id/lst_txtKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/btnurunler"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.7"
+            android:background="@android:drawable/stat_sys_upload"
+            android:backgroundTint="@color/com_facebook_blue" />
+    </LinearLayout>
+
+
+</LinearLayout>

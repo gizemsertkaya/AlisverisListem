@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.gizem2.alisverislistem.ProfileActivity">
+    <EditText
+        android:id="@+id/TV_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ad"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TV_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/soyad"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TV_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/profil_duzenle_btnguncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guncelle" />
+
+
+
+</LinearLayout>
